@@ -1,5 +1,5 @@
 .about-section {
-	margin-top: 5%;
+	margin: 10% 0;
 	width: 100%;
 
 	.header {
@@ -13,7 +13,7 @@
 		}
 
 		hr {
-			background-color: black;
+			background-color: @background_color_main-bg;
 			width: 10%;
 			height: 10px;
 		}
@@ -21,7 +21,7 @@
 
 	.about-content {
 		.top-content {
-			margin-top: 7%;
+			margin-top: 10%;
 			display: flex;
 
 			.card {
@@ -32,7 +32,7 @@
 				padding: 0 15px;
 
 				.img {
-					background: #07bac2;
+					background: @color_blue-accent;
 					width: 80px;
 					height: 80px;
 					position: relative;
@@ -45,13 +45,13 @@
 						left: 0;
 						height: 80px;
 						width: 80px;
-						background: #07bac2;
+						background: @color_blue-accent;
 						transform: rotate(135deg);
 					}
 				}
 
 				h2 {
-					margin-top: 40px;
+					margin-top: 50px;
 					font-size: 20px;
 				}
 				p {
@@ -64,7 +64,7 @@
 
 		.bio {
 			padding: 0 15px;
-			margin-top: 7%;
+			margin-top: 10%;
 			display: flex;
 			justify-content: space-between;
 
@@ -92,7 +92,7 @@
 				.skill-container {
 					display: flex;
 					.tag {
-						background-color: #08bac2;
+						background-color: @color_blue-accent;
 						width: 100px;
 						padding: 10px;
 						color: white;
@@ -110,31 +110,31 @@
 				.bar {
 					width: 100%;
 					margin-top: 10px;
-					background-color: #ebebeb;
+					background-color: @background_color_projects;
 
 					.css {
 						width: 80%;
-						background-color: #01979d;
+						background-color: @background_color_skills;
 					}
 
 					.html {
 						width: 90%;
-						background-color: #01979d;
+						background-color: @background_color_skills;
 					}
 
 					.js {
 						width: 85%;
-						background-color: #01979d;
+						background-color: @background_color_skills;
 					}
 
 					.react {
 						width: 75%;
-						background-color: #01979d;
+						background-color: @background_color_skills;
 					}
 
 					.mongo {
 						width: 60%;
-						background-color: #01979d;
+						background-color: @background_color_skills;
 					}
 				}
 			}

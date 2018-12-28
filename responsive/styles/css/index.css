@@ -182,7 +182,7 @@ h5 {
   padding: 20px;
 }
 .navigation {
-  background-color: black;
+  background-color: #252934;
   border-bottom: 4px solid #07bac2;
 }
 .navigation .nav-content {
@@ -199,7 +199,7 @@ h5 {
   color: white;
 }
 .about-section {
-  margin-top: 5%;
+  margin: 10% 0;
   width: 100%;
 }
 .about-section .header {
@@ -212,12 +212,12 @@ h5 {
   margin: 0;
 }
 .about-section .header hr {
-  background-color: black;
+  background-color: #252934;
   width: 10%;
   height: 10px;
 }
 .about-section .about-content .top-content {
-  margin-top: 7%;
+  margin-top: 10%;
   display: flex;
 }
 .about-section .about-content .top-content .card {
@@ -246,7 +246,7 @@ h5 {
   transform: rotate(135deg);
 }
 .about-section .about-content .top-content .card h2 {
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 20px;
 }
 .about-section .about-content .top-content .card p {
@@ -256,7 +256,7 @@ h5 {
 }
 .about-section .about-content .bio {
   padding: 0 15px;
-  margin-top: 7%;
+  margin-top: 10%;
   display: flex;
   justify-content: space-between;
 }
@@ -281,7 +281,7 @@ h5 {
   display: flex;
 }
 .about-section .about-content .bio .skills-content .skill-container .tag {
-  background-color: #08bac2;
+  background-color: #07bac2;
   width: 100px;
   padding: 10px;
   color: white;
@@ -319,10 +319,12 @@ h5 {
   background-color: #01979d;
 }
 .projects-section {
+  background-color: #ebebeb;
   margin-top: 5%;
   width: 100%;
 }
 .projects-section .header {
+  padding: 5% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,7 +334,7 @@ h5 {
   margin: 0;
 }
 .projects-section .header hr {
-  background-color: black;
+  background-color: #252934;
   width: 10%;
   height: 10px;
 }
@@ -350,24 +352,17 @@ h5 {
   display: none;
   width: 75%;
 }
-.projects-section .tabs .tabs-item .tabs-item-title {
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
 .projects-section .tabs .tabs-item-selected {
   display: block;
 }
 .projects-section .tabs .tabs-links {
   display: flex;
-  background-color: red;
+  justify-content: center;
 }
 .projects-section .tabs .tabs-link {
   padding: 20px 25px;
-  font-size: 24px;
-  background-color: red;
-  border-right: 1px solid white;
-  color: white;
+  font-size: 20px;
+  color: #1d232c;
   cursor: pointer;
 }
 .projects-section .tabs .tabs-link:hover {
@@ -375,16 +370,15 @@ h5 {
 }
 .projects-section .tabs .tabs-link-selected {
   z-index: 2;
-  border-right: 1px solid red;
-  background-color: white;
-  color: black;
+  background-color: #e3196d;
+  color: white;
 }
 .projects-section .tabs .tabs-link-selected:hover {
-  background-color: white;
+  background-color: #07bac2;
 }
 .contact-section {
-  background-color: #21242e;
-  margin-top: 5%;
+  background-color: #252934;
+  padding-top: 5%;
   width: 100%;
   color: white;
 }
@@ -405,7 +399,7 @@ h5 {
   background-color: white;
 }
 .contact-section .contact-content {
-  margin-top: 60px;
+  margin-top: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -416,7 +410,8 @@ h5 {
   letter-spacing: 0.7px;
 }
 .contact-section .contact-content form {
-  margin-top: 30px;
+  margin-top: 3%;
+  margin-bottom: 8%;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -427,16 +422,44 @@ h5 {
   margin-top: 5px;
   border: none;
   padding: 8px;
-  color: #676768;
-  background-color: #1b2027;
+  color: #747474;
+  background-color: #1d232c;
 }
 .contact-section .contact-content form input[type='submit'] {
   margin-top: 5px;
-  width: 20%;
-  background-color: #1b2027;
+  width: auto;
+  background-color: #1d232c;
   color: white;
   padding: 12px 20px;
   border: 2px solid white;
   cursor: pointer;
   align-self: flex-end;
+}
+.footer-section {
+  background-color: #1a232e;
+  padding-top: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-section .social {
+  display: flex;
+  justify-content: center;
+}
+.footer-section .social .fab {
+  padding: 10px 0;
+  width: 60px;
+  margin: 60px 10px;
+  background-color: #252934;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.footer-section .copyright {
+  padding-bottom: 30px;
+  color: #747474;
+}
+.footer-section .copyright span {
+  color: #e3196d;
 }
