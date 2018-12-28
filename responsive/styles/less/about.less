@@ -1,0 +1,143 @@
+.about-section {
+	margin-top: 5%;
+	width: 100%;
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h1 {
+			font-size: 60px;
+			margin: 0;
+		}
+
+		hr {
+			background-color: black;
+			width: 10%;
+			height: 10px;
+		}
+	}
+
+	.about-content {
+		.top-content {
+			margin-top: 7%;
+			display: flex;
+
+			.card {
+				width: 25%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 0 15px;
+
+				.img {
+					background: #07bac2;
+					width: 80px;
+					height: 80px;
+					position: relative;
+					text-align: center;
+					transform: rotate(20deg);
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 80px;
+						width: 80px;
+						background: #07bac2;
+						transform: rotate(135deg);
+					}
+				}
+
+				h2 {
+					margin-top: 40px;
+					font-size: 20px;
+				}
+				p {
+					text-align: center;
+					line-height: 125%;
+					letter-spacing: 0.7px;
+				}
+			}
+		}
+
+		.bio {
+			padding: 0 15px;
+			margin-top: 7%;
+			display: flex;
+			justify-content: space-between;
+
+			.profile {
+				width: 40%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				.profile-content {
+					p {
+						text-align: center;
+						line-height: 125%;
+						letter-spacing: 0.7px;
+					}
+				}
+			}
+
+			.skills-content {
+				margin-left: 5%;
+				width: 60%;
+				display: flex;
+				flex-direction: column;
+
+				.skill-container {
+					display: flex;
+					.tag {
+						background-color: #08bac2;
+						width: 100px;
+						padding: 10px;
+						color: white;
+						position: absolute;
+						z-index: 1;
+					}
+				}
+
+				.skills {
+					text-align: right;
+					padding: 10px;
+					color: white;
+				}
+
+				.bar {
+					width: 100%;
+					margin-top: 10px;
+					background-color: #ebebeb;
+
+					.css {
+						width: 80%;
+						background-color: #01979d;
+					}
+
+					.html {
+						width: 90%;
+						background-color: #01979d;
+					}
+
+					.js {
+						width: 85%;
+						background-color: #01979d;
+					}
+
+					.react {
+						width: 75%;
+						background-color: #01979d;
+					}
+
+					.mongo {
+						width: 60%;
+						background-color: #01979d;
+					}
+				}
+			}
+		}
+	}
+}

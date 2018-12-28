@@ -1,10 +1,7 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -86,12 +83,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -105,343 +102,341 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-/* Set every element's box-sizing to border-box */
-* {
-	box-sizing: border-box;
-}
-
 html,
 body {
-	height: 100%;
-	font-family: 'Titillium Web', sans-serif;
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5 {
-	font-family: 'Bangers';
-	letter-spacing: 1px;
-	margin-bottom: 15px;
+  font-family: 'Bangers';
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
-
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-/* ----------------- heading */
-
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 .intro-section {
-	color: white;
-	background-color: #252934;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
+  color: white;
+  background-color: #252934;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 .intro-section .heading {
-	margin: auto;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .intro-section .heading h1 {
-	letter-spacing: 3px;
-	line-height: 120%;
-	text-align: center;
-	font-size: 70px;
+  letter-spacing: 3px;
+  line-height: 120%;
+  text-align: center;
+  font-size: 70px;
 }
 .intro-section .heading h1 span {
-	color: #e3196d;
+  color: #e3196d;
 }
 .intro-section .heading .button {
-	margin-top: 10px;
-	border: 1px solid white;
+  margin-top: 10px;
+  border: 1px solid white;
 }
 .intro-section .heading .button p {
-	font-size: 20px;
-	padding: 20px;
+  font-size: 20px;
+  padding: 20px;
 }
-
-/* ------------Navbar */
-
 .navigation {
-	background-color: black;
-	border-bottom: 4px solid #03c2c9;
+  background-color: black;
+  border-bottom: 4px solid #07bac2;
+}
+.navigation .nav-content {
+  width: 50%;
+  display: flex;
 }
 .navigation .nav-content .selected {
-	color: #e3196d;
-}
-
-.navigation .nav-content {
-	width: 50%;
-	display: flex;
+  color: #e3196d;
 }
 .navigation .nav-content a {
-	margin: 3% 0;
-	padding-left: 5%;
-	text-decoration: none;
-	color: white;
+  margin: 3% 0;
+  padding-left: 5%;
+  text-decoration: none;
+  color: white;
 }
-
-/*  ---------Main content */
-
-.container {
-	width: 1100px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-}
-
-/* --------------- About */
-
 .about-section {
-	margin-top: 5%;
-	width: 100%;
+  margin-top: 5%;
+  width: 100%;
 }
-
 .about-section .header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .about-section .header h1 {
-	font-size: 60px;
-	margin: 0;
+  font-size: 60px;
+  margin: 0;
 }
 .about-section .header hr {
-	background-color: black;
-	width: 10%;
-	height: 10px;
+  background-color: black;
+  width: 10%;
+  height: 10px;
 }
-
 .about-section .about-content .top-content {
-	margin-top: 7%;
-	display: flex;
+  margin-top: 7%;
+  display: flex;
 }
 .about-section .about-content .top-content .card {
-	width: 25%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 0 15px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
 }
-
 .about-section .about-content .top-content .card .img {
-	background: #07bac2;
-	width: 80px;
-	height: 80px;
-	position: relative;
-	text-align: center;
-	transform: rotate(20deg);
+  background: #07bac2;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  text-align: center;
+  transform: rotate(20deg);
 }
-
 .about-section .about-content .top-content .card .img:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 80px;
-	width: 80px;
-	background: #07bac2;
-	transform: rotate(135deg);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+  background: #07bac2;
+  transform: rotate(135deg);
 }
-
 .about-section .about-content .top-content .card h2 {
-	margin-top: 40px;
-	font-size: 20px;
+  margin-top: 40px;
+  font-size: 20px;
 }
 .about-section .about-content .top-content .card p {
-	text-align: center;
-	line-height: 125%;
-	letter-spacing: 0.7px;
+  text-align: center;
+  line-height: 125%;
+  letter-spacing: 0.7px;
 }
-
 .about-section .about-content .bio {
-	padding: 0 15px;
-	margin-top: 7%;
-	display: flex;
-	justify-content: space-between;
+  padding: 0 15px;
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-between;
 }
 .about-section .about-content .bio .profile {
-	width: 40%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about-section .about-content .bio .profile .profile-content p {
-	text-align: center;
-	line-height: 125%;
-	letter-spacing: 0.7px;
+  text-align: center;
+  line-height: 125%;
+  letter-spacing: 0.7px;
 }
-
 .about-section .about-content .bio .skills-content {
-	margin-left: 5%;
-	width: 60%;
-	display: flex;
-	flex-direction: column;
+  margin-left: 5%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 .about-section .about-content .bio .skills-content .skill-container {
-	display: flex;
+  display: flex;
 }
 .about-section .about-content .bio .skills-content .skill-container .tag {
-	background-color: #08bac2;
-	width: 100px;
-	padding: 10px;
-	color: white;
-	position: absolute;
-	z-index: 1;
+  background-color: #08bac2;
+  width: 100px;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  z-index: 1;
 }
-
 .about-section .about-content .bio .skills-content .skills {
-	text-align: right; /* Right-align text */
-	padding: 10px; /* Add some padding */
-	color: white; /* White text color */
+  text-align: right;
+  padding: 10px;
+  color: white;
 }
-
 .about-section .about-content .bio .skills-content .bar {
-	width: 100%;
-	margin-top: 10px;
-	background-color: #ebebeb;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #ebebeb;
 }
 .about-section .about-content .bio .skills-content .bar .css {
-	width: 80%;
-	background-color: #01979d;
+  width: 80%;
+  background-color: #01979d;
 }
-
 .about-section .about-content .bio .skills-content .bar .html {
-	width: 90%;
-	background-color: #01979d;
-} /* Green */
-
+  width: 90%;
+  background-color: #01979d;
+}
 .about-section .about-content .bio .skills-content .bar .js {
-	width: 85%;
-	background-color: #01979d;
-} /* Red */
-
+  width: 85%;
+  background-color: #01979d;
+}
 .about-section .about-content .bio .skills-content .bar .react {
-	width: 75%;
-	background-color: #01979d;
+  width: 75%;
+  background-color: #01979d;
 }
 .about-section .about-content .bio .skills-content .bar .mongo {
-	width: 60%;
-	background-color: #01979d;
+  width: 60%;
+  background-color: #01979d;
 }
-
-/*  -------------- Projects section */
-
 .projects-section {
-	margin-top: 5%;
-	width: 100%;
-	border: 2px solid green;
+  margin-top: 5%;
+  width: 100%;
 }
-
 .projects-section .header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .projects-section .header h1 {
-	font-size: 60px;
-	margin: 0;
+  font-size: 60px;
+  margin: 0;
 }
 .projects-section .header hr {
-	background-color: black;
-	width: 10%;
-	height: 10px;
+  background-color: black;
+  width: 10%;
+  height: 10px;
 }
-
-/*  --------- Contact section */
-
+.projects-section .tabs {
+  width: 100%;
+}
+.projects-section .tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.projects-section .tabs .tabs-item {
+  display: none;
+  width: 75%;
+}
+.projects-section .tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.projects-section .tabs .tabs-item-selected {
+  display: block;
+}
+.projects-section .tabs .tabs-links {
+  display: flex;
+  background-color: red;
+}
+.projects-section .tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: red;
+  border-right: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.projects-section .tabs .tabs-link:hover {
+  background-color: lightcoral;
+}
+.projects-section .tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid red;
+  background-color: white;
+  color: black;
+}
+.projects-section .tabs .tabs-link-selected:hover {
+  background-color: white;
+}
 .contact-section {
-	background-color: #21242e;
-	margin-top: 5%;
-	width: 100%;
-	color: white;
+  background-color: #21242e;
+  margin-top: 5%;
+  width: 100%;
+  color: white;
 }
-
 .contact-section .header {
-	padding-top: 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: white;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
-
 .contact-section .header h1 {
-	font-size: 60px;
-	margin: 0;
+  font-size: 60px;
+  margin: 0;
 }
 .contact-section .header hr {
-	width: 10%;
-	height: 10px;
-	background-color: white;
+  width: 10%;
+  height: 10px;
+  background-color: white;
 }
-
 .contact-section .contact-content {
-	margin-top: 60px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-section .contact-content p {
-	color: #07bac2;
-	font-size: 20px;
-	letter-spacing: 0.7px;
+  color: #07bac2;
+  font-size: 20px;
+  letter-spacing: 0.7px;
 }
 .contact-section .contact-content form {
-	margin-top: 30px;
-	width: 30%;
-	display: flex;
-	flex-direction: column;
+  margin-top: 30px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
 }
-
 .contact-section .contact-content form input,
-textarea {
-	font-size: 18px;
-	margin-top: 5px;
-	border: none;
-	padding: 8px;
-	color: #676768;
-	background-color: #1b2027;
+.contact-section .contact-content form textarea {
+  font-size: 18px;
+  margin-top: 5px;
+  border: none;
+  padding: 8px;
+  color: #676768;
+  background-color: #1b2027;
 }
-
 .contact-section .contact-content form input[type='submit'] {
-	margin-top: 5px;
-	width: 20%;
-	background-color: #1b2027;
-	color: white;
-	padding: 12px 20px;
-	border: 2px solid white;
-	cursor: pointer;
-	align-self: flex-end;
+  margin-top: 5px;
+  width: 20%;
+  background-color: #1b2027;
+  color: white;
+  padding: 12px 20px;
+  border: 2px solid white;
+  cursor: pointer;
+  align-self: flex-end;
 }
