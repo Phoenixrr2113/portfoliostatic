@@ -31,23 +31,23 @@
 				align-items: center;
 				padding: 0 15px;
 
-				.img {
-					background: @color_blue-accent;
-					width: 80px;
-					height: 80px;
-					position: relative;
-					text-align: center;
-					transform: rotate(20deg);
-					&:before {
-						content: '';
-						position: absolute;
-						top: 0;
-						left: 0;
-						height: 80px;
-						width: 80px;
-						background: @color_blue-accent;
-						transform: rotate(135deg);
+				@keyframes spin {
+					0% {
+						transform: rotate(0deg);
 					}
+					100% {
+						transform: rotate(360deg);
+					}
+				}
+
+				.img {
+					border: 16px solid @background_color_projects;
+					border-radius: 50%;
+					border-top: 16px solid @color_blue-accent;
+					width: 120px;
+					height: 120px;
+
+					animation: spin 1s linear infinite;
 				}
 
 				h2 {

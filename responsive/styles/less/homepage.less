@@ -23,9 +23,23 @@
 		.button {
 			margin-top: 10px;
 			border: 1px solid @color_main-font;
+			display: flex;
+			align-items: baseline;
 			p {
 				font-size: 20px;
 				padding: 20px;
+			}
+			i {
+				display: none;
+			}
+			&:hover {
+				i {
+					display: inline-block;
+				}
+				background-color: @color_name-rose-accent;
+				padding-right: 15px;
+				transition: 0.4s;
+				cursor: pointer;
 			}
 		}
 	}

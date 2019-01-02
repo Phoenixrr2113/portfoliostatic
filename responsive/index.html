@@ -29,20 +29,28 @@
 			defer="defer"
 			src="/responsive/components/projects/projects.js"
 		></script>
+		<script
+			defer="defer"
+			src="/responsive/components/navigation/navigation.js"
+		></script>
 		<div class="intro-section">
 			<div class="heading">
 				<h1>
 					Hello, I'm <span>Randy Wilson</span>. <br />
 					I'm a full-stack web developer.
 				</h1>
-				<div class="button"><p>View my work</p></div>
+				<div class="button"><p>View my work</p><i class="fas fa-arrow-right"></i></div>
 			</div>
 		</div>
 
 		<div class="navigation">
 			<div class="nav-content">
+				
 				<a class="selected" href="#">Home</a> <a href="#">About</a>
 				<a href="#">Portfolio</a> <a href="#">Contact</a>
+			</div>
+			<div class="progress-container">
+				<div class="scroll-progress-bar"></div>
 			</div>
 		</div>
 
@@ -80,7 +88,7 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="img">#</div>
+							<div class="img"></div>
 							<div class="title"><h2>Dynamic</h2></div>
 							<div class="text">
 								<p>
@@ -224,6 +232,8 @@
 				<i class="fab fa-github-square"></i>
 			</div>
 			<div class="copyright">RANDY WILSON <span>©2018</span></div>
-		
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/TextPlugin.min.js"></script>
 	</body>
 </html>

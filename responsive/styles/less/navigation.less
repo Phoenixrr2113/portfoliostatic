@@ -1,6 +1,6 @@
 .navigation {
 	background-color: @background_color_main-bg;
-	border-bottom: 4px solid @color_blue-accent;
+	z-index: 3;
 
 	.nav-content {
 		width: 50%;
@@ -11,10 +11,31 @@
 		}
 
 		a {
+			font-size: 20px;
 			margin: 3% 0;
 			padding-left: 5%;
 			text-decoration: none;
 			color: @color_main-font;
 		}
 	}
+	.progress-container {
+		width: 100%;
+		height: 6px;
+		background: @color_blue-accent;
+
+		.scroll-progress-bar {
+			height: 6px;
+			background: @background_color_skills;
+			width: 0%;
+		}
+	}
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.sticky + .container {
+	padding-top: 60px;
 }
